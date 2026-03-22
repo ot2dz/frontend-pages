@@ -1,0 +1,15 @@
+name = "yousseftex-frontend"
+type = "javascript"
+main = ""
+
+# Build configuration
+build = { command = "npm run build && npx @cloudflare/next-on-pages@latest build" }
+compatibility_date = "2024-03-20"
+
+# Environment variables for production
+[env.production]
+vars = { WORKER_URL = "https://hono-worker.must2dz.workers.dev" }
+
+# Routes configuration
+[env.production.routes]
+pattern = "yousseftex-frontend.pages.dev/*"
