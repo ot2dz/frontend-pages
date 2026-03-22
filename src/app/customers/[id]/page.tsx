@@ -1,5 +1,7 @@
 'use client';
 
+export const runtime = 'edge';
+
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import apiClient from '@/lib/axios';

@@ -1,6 +1,5 @@
 import type { NextConfig } from "next";
 
-// Worker URL: يستخدم متغير البيئة في الإنتاج، أو localhost للتطوير
 const WORKER_URL = process.env.WORKER_URL || 'http://127.0.0.1:8788';
 
 const nextConfig: NextConfig = {
